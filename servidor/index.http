@@ -1,0 +1,68 @@
+POST http://localhost:3000/api/destinos
+Content-Type: application/json
+
+{
+    "nombre": "San Bernardo",
+    "descripcion": "Disfruta del sol y las playas del Mar Caribe",
+    "actividades": [
+        {
+            "nombre": "Windsurf",
+            "descripcion": "Las condiciones de viento y olas son ideales para la práctica del windsurf",
+            "categoria": "deporte"
+        }
+    ],
+    "eventos": [
+            {
+                "nombre": "Festival Gastronómico",
+                "descripcion": "Disfruta de las comidas típicas de la región y platos internacionales",
+                "fecha": "agosto"
+            }
+        ],
+    "estacion": 2
+        
+}
+###
+
+GET http://localhost:3000/api/destinos
+Content-Type: application/json
+
+
+###
+
+
+DELETE http://localhost:3000/api/destinos/
+Content-Type: application/json
+
+
+###
+
+
+GET http://localhost:3000/api/destinos/649cca62b6228d9114efd759
+Content-Type: application/json
+
+
+###
+
+PUT http://localhost:3000/api/destinos/649f71302a2d56e73e0ccd35
+Content-Type: application/json 
+
+{
+    "nombre": "San Bernardo2",
+    "descripcion": "Disfruta del sol y las playas del Mar Caribe",
+    "actividades": [
+        {
+            "nombre": "Windsurf2",
+            "descripcion": "Las condiciones de viento y olas son ideales para la práctica del windsurf",
+            "categoria": "deporte"
+        }
+    ],
+    "eventos": [
+            {
+                "nombre": "Festival Gastronómico2",
+                "descripcion": "Disfruta de las comidas típicas de la región y platos internacionales",
+                "fecha": "agosto"
+            }
+        ],
+    "estacion": 2
+        
+}
